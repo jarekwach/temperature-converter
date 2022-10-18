@@ -23,5 +23,54 @@ body {
   color: white;
 }
 .header h1 {
+  font-size: 36px;
   margin-bottom: 16px;
+}
+
+.converter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 100px auto;
+  height: 500px;
+  width: 700px;
+  background-color: rgb(0, 128, 255);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px black;
+}
+.converter-box label {
+  padding: 36px;
+  font-size: 32px;
+  text-align: center;
+}
+.converter-box input {
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+}
+.converter-box .result {
+  text-align: center;
+}
+.converter-box .btns {
+  display: flex;
+  justify-content: center;
+}
+.converter-box .btns button {
+  padding: 20px 40px;
+  margin: 20px;
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.converter-box .btns button:hover {
+  background-color: #fff;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
