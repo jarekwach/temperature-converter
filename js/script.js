@@ -27,13 +27,13 @@ function fahrenheitToCelsius() {
 	convertInput.value = ''
 }
 
-function checkInput() {
-    if (convertInput.value === '') {
-        result.textContent = 'Wprowadź poprawną wartość';
-    } else {
-        console.log('ok');
-    }
+function convert() {
+	if (convertInput.value != '') {
+		console.log('jest ok')
+	} else {
+		console.log('błąd')
+	}
 }
 
 changetBtn.addEventListener('click', changeUnit)
-convertBtn.addEventListener('click', checkInput)
+convertBtn.addEventListener('click', convert)
