@@ -13,7 +13,31 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <h1>Konwerter temperatury</h1>
+            <p>Aplikacja służy do przeliczania stopni Celsjusza na stopnie Fahrenheita i odwrotnie.</p>
+        </div>
+    </header>
 
+    <main>
+        <div class="wrapper">
+            <div class="converter-box">
+                <label for="converter">Przelicz <span class="unit-one">°C</span> na <span class="unit-two">°F</span>
+                </label>
+                <input type="number" name="" id="converter" placeholder="Wprowadz liczbę">
+                <p class="result"></p>
+
+                <div class="btns">
+                    <button class="convert">Przelicz</button>
+                    <button class="reset">Wyczyść</button>
+                    <button class="change">Zamień</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

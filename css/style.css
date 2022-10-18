@@ -6,4 +6,22 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.768);
+  color: white;
+}
+.header h1 {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */
