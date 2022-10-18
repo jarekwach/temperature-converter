@@ -15,7 +15,7 @@ function changeUnit() {
 	}
 }
 
-function CelsiusToFahrenheit() {
+function celsiusToFahrenheit() {
 	const far = convertInput.value * 1.8 + 32
 	result.textContent = `${convertInput.value}°C to ${far.toFixed(1)}°F`
 	convertInput.value = ''
@@ -27,6 +27,13 @@ function fahrenheitToCelsius() {
 	convertInput.value = ''
 }
 
+function checkInput() {
+    if (convertInput.value === '') {
+        result.textContent = 'Wprowadź poprawną wartość';
+    } else {
+        console.log('ok');
+    }
+}
+
 changetBtn.addEventListener('click', changeUnit)
-// convertBtn.addEventListener('click', CelsiusToFahrenheit)
-convertBtn.addEventListener('click', fahrenheitToCelsius)
+convertBtn.addEventListener('click', checkInput)
