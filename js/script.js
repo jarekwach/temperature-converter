@@ -29,9 +29,13 @@ function fahrenheitToCelsius() {
 
 function convert() {
 	if (convertInput.value != '') {
-		console.log('jest ok')
+		if (unitOne.textContent === '°C') {
+			celsiusToFahrenheit()
+		} else {
+			fahrenheitToCelsius()
+		}
 	} else {
-		console.log('błąd')
+		result.textContent = 'Wprowadź poprawną wartość'
 	}
 }
 
