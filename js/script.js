@@ -4,6 +4,7 @@ const changetBtn = document.querySelector('.change')
 const convertInput = document.querySelector('.convert-input')
 const result = document.querySelector('.result')
 const convertBtn = document.querySelector('.convert')
+const resetBtn = document.querySelector('.reset')
 
 function changeUnit() {
 	if (unitOne.textContent == '°C') {
@@ -39,5 +40,17 @@ function convert() {
 	}
 }
 
+function reset() {
+	result.textContent = ''
+	convertInput.value = ''
+}
+
 changetBtn.addEventListener('click', changeUnit)
 convertBtn.addEventListener('click', convert)
+resetBtn.addEventListener('click', reset)
+convertInput.addEventListener('keydown', function (e) {
+	if (e.key === 'Enter') {
+		convert()
+	}
+})
+
